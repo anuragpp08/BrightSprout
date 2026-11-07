@@ -1,0 +1,20 @@
+<svg viewBox="0 0 640 175" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leafLeft" x1="0%" y1="100%" x2="60%" y2="0%">
+      <stop offset="0%" stop-color="#1B7A6E"/>
+      <stop offset="100%" stop-color="#2F9E8F"/>
+    </linearGradient>
+    <linearGradient id="leafRight" x1="100%" y1="100%" x2="40%" y2="0%">
+      <stop offset="0%" stop-color="#2F9E8F"/>
+      <stop offset="100%" stop-color="#4DBEAE"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10,0) scale(0.62)">
+    <path d="M100,188 C100,150 100,120 100,95" stroke="#1B7A6E" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M100,150 C60,145 34,105 46,58 C88,66 108,108 100,150 Z" fill="url(#leafLeft)"/>
+    <path d="M100,120 C138,112 160,76 148,36 C110,46 92,86 100,120 Z" fill="url(#leafRight)"/>
+    <circle cx="100" cy="190" r="10" fill="#C1583B"/>
+  </g>
+  <text x="170" y="123" font-family="Helvetica, Arial, sans-serif" font-size="66" font-weight="700" fill="#1B2A4A">Bright<tspan fill="#2F9E8F">Sprout</tspan></text>
+  <text x="172" y="152" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#5A6472" letter-spacing="2">WOMB TO 18 &#8226; EARLY-LIFE DEVELOPMENT</text>
+</svg>

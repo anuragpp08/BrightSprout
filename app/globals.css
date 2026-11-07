@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/*
+ * next/font sets --font-nunito and --font-fraunces on <html>.
+ * @theme inline exposes them as font-sans and font-display.
+ * When Hindi or Marathi copy is added, include the devanagari subset
+ * on Nunito Sans in lib/fonts.ts. Fraunces does not cover Devanagari;
+ * those headings should fall back to Nunito Sans.
+ */
+@theme inline {
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: #f7f3ec;
+  color: #1c2b24;
+  font-family: var(--font-sans);
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid #1e4d3a;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
